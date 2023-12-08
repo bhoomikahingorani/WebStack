@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<title>Classical Music</title>
+
+<head>
+    <link rel="stylesheet" href="music_bg.jpg" type="icon">
+</head>
+
+<body>
+    <div style=" background-color: rgb(229, 234, 239)">
+        <center>
+            <font
+                style="font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 1cm; background-color: rgb(96, 116, 143); color: white; margin-bottom: 1cm;  ">
+                Mozart's Harp and Flute Concerto</font>
+            <div style="border: 0.1cm; background-color: rgb(96, 116, 143);margin-top: 1cm; margin-bottom: 1cm; ">
+
+                <audio controls width="100%">
+                    <source src="music.mp3">
+                </audio>
+            </div>
+        </center>
+        <center>
+            <font
+                style="font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 1cm; background-color: rgb(96, 116, 143); color: white; ">
+                Classical Music Website</font>
+            <div style="margin-top: 5%;  background-color: rgb(175, 184, 193); width: 70%; margin-bottom: 1cm;">
+                <iframe src="https://www.classical-music.com/" title="Classical Music" width="65%" height="600"
+                    frameborder="0"></iframe>
+            </div>
+        </center>
+        <center>
+            <font
+                style="font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 1cm; background-color: rgb(96, 116, 143); color: white; ">
+                Music Video</font>
+            <div style="margin-top: 1cm; margin-bottom: 1cm;">
+                <video controls width="65%" height="360">
+                    <source src="2- What is SQL.mp4">
+                </video>
+            </div>
+        </center>
+
+        <center>
+            <font
+                style="font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 1cm; background-color: rgb(96, 116, 143); color: white; ">
+                Google Form</font>
+            <div style="background-color: rgb(175, 184, 193); width: 70%; margin-top: 1cm; margin-bottom: 1cm;">
+                Google Form
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSfej3Na85d0VTSqgy4YpDBZDojK134ush2Stw4VUevbUxv6HQ/viewform?embedded=true"
+                    width="640" height="842" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </center>
+
+        <center>
+            <font
+                style="font-family: Verdana, Geneva, Tahoma, sans-serif; margin-top: 1cm; background-color: rgb(96, 116, 143); color: white;">
+                Workshop Form</font>
+            <div
+                style="font-family: Verdana, Geneva, Tahoma, sans-serif; width: 50%; border: 0.1cm; border-style: solid; border-radius: 0.5cm; border-color:rgb(194, 206, 219);margin-top: 1cm ; margin-bottom: 1cm;">
+
+                <form>
+                    <!-- Student Details Section -->
+                    <fieldset
+                        style="border-radius:1cm; margin-top: 1cm; width: 50%; background-color: rgb(194, 206, 219); ">
+                        <legend>Student Details</legend>
+                        <label for="full_name">Full Name:</label>
+                        <input type="text" id="full_name" name="full_name" required><br><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required><br><br>
+
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required><br><br>
+                    </fieldset>
+
+                    <!-- Workshop Selection Section -->
+                    <fieldset
+                        style="border-radius:1cm; margin-top: 1cm; width: 50%; background-color: rgb(194, 206, 219);">
+                        <legend>Select Instrument Workshops (Up to 3)</legend>
+                        <label for="Strings">Strings:</label>
+                        <select id="workshop1" name="workshop1">
+                            <option value="workshopA">Violin</option>
+                            <option value="workshopB">Harp</option>
+                            <option value="workshopC">Cello</option>
+                        </select><br><br>
+
+                        <label for="Beats">Beats:</label>
+                        <select id="workshop2" name="workshop2">
+                            <option value="workshopA">Tabla</option>
+                            <option value="workshopB">Drums</option>
+                            <option value="workshopC">Banjo</option>
+                        </select><br><br>
+
+                        <label for="workshop3">Windwood</label>
+                        <select id="workshop3" name="workshop3">
+                            <option value="workshopA">Flute</option>
+                            <option value="workshopB">Saxophone</option>
+                            <option value="workshopC">Bassoon C</option>
+                        </select><br><br>
+                    </fieldset>
+
+                    <!-- Additional Information Section -->
+                    <fieldset
+                        style="border-radius:1cm; margin-top: 1cm; width: 50%; background-color: rgb(194, 206, 219);">
+                        <legend>Additional Information</legend>
+                        <label for="comments">Comments:</label><br>
+                        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+                        <label for="payment">Payment Method:</label>
+                        <input type="radio" id="credit_card" name="payment_method" value="credit_card">
+                        <label for="credit_card">Credit Card</label>
+                        <input type="radio" id="paypal" name="payment_method" value="paypal">
+                        <label for="paypal">PayPal</label><br><br>
+                    </fieldset>
+
+                    <!-- Submit Button -->
+                    <input type="submit" value="Submit" style="background-color: rgb(96, 116, 143); color: white;">
+                </form>
+            </div>
+        </center>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        // Initialize counts
+        var maleCount = 0;
+        var femaleCount = 0;
+
+        function countMale() {
+            maleCount++;
+            updateCounts();
+        }
+
+        function countFemale() {
+            femaleCount++;
+            updateCounts();
+        }
+
+        function updateCounts() {
+            // Update the counts on the HTML page
+            document.getElementById('maleCount').innerText = 'Male Count: ' + maleCount;
+            document.getElementById('femaleCount').innerText = 'Female Count: ' + femaleCount;
+
+            // Calculate and update the total count
+            var totalCount = maleCount + femaleCount;
+            document.getElementById('totalCount').innerText = 'Total Count: ' + totalCount;
+        }
+    </script>
+</head>
+
+<body style="font-family: Verdana, Geneva, Tahoma, sans-serif; justify-content: center;">
+    <div style="justify-content: center;">
+        <button onclick="countMale()"
+            style="background-color: rgb(9, 175, 246); color: white; padding:0.5cm; border-radius: 0.2cm; size: 2cm;">Male
+        </button>
+        <button onclick="countFemale()"
+            style="background-color: pink; color: white; padding:0.5cm; border-radius: 0.2cm;">Female </button>
+    </div>
+
+    <div>
+        <p id="maleCount">Male Count: 0</p>
+        <p id="femaleCount">Female Count: 0</p>
+        <p id="totalCount">Total Count: 0</p>
+    </div>
+</body>
+
+</html>

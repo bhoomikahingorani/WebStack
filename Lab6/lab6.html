@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        // function greet() {
+        //     // Use prompt to get user input
+        //     var name = prompt('Enter your name:');
+
+        //     // Check if the user entered a name
+        //     if (name !== null && name !== '') {
+        //         var greetingMessage = 'Hello, ' + name + '!';
+        //         alert(greetingMessage);
+        //         return greetingMessage;
+        //     } else {
+        //         return 'No name entered.';
+
+        //     }
+        // }
+
+        // // Call the greet function
+        // greet();
+
+        function calculateArea() {
+            var radius = parseFloat(document.getElementById('radius').value);
+            var area = Math.PI * radius * radius;
+            document.getElementById('circle').innerHTML = 'Area: ' + area.toFixed(2);
+        }
+    </script>
+</head>
+
+<body>
+    <h3 id="name"></h3>
+</body>
+<form name="validationForm">
+    <div>
+        <fieldset style="border-radius:1cm; margin-top: 1cm; width: 50%; background-color: rgb(179, 192, 196); ">
+            <label for="radius">Radius:</label>
+            <input type="text" id="radius" name="radius" required><br><br>
+        </fieldset>
+    </div>
+    <h3 id="circle"></h3><button onclick="calculateArea()">area</button>
+</form>
+
+</html>

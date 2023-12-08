@@ -1,0 +1,28 @@
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkcyan;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkorange;
+}
+
+.bright {
+    color: chartreuse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.uppercase-text {
+    font-variant-caps: all-petite-caps;
+    font-weight: bold;
+}
+
+#divContent {
+    text-align: center;
+    color: darkmagenta;
+}
+
+body {
+    background: -moz-linear-gradient()
+}

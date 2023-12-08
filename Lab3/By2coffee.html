@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        img.logo {
+            width: 100px;
+            height: 100px;
+            margin-left: 5%;
+        }
+
+        div.navbar {
+            background: rgb(226, 217, 205);
+        }
+
+        img {
+            height: 50%;
+            width: 60%;
+            margin-top: 5%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .bg {
+            height: 50%;
+            width: 100%;
+            margin-top: 2%;
+            opacity: 0.5;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .column_left {
+            float: left;
+            width: 30%;
+            padding: 10px;
+            margin-left: 15%;
+        }
+
+        .column_right {
+            float: right;
+            width: 30%;
+            padding: 10px;
+            margin-right: 15%;
+        }
+
+        .column img {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        .column img:hover {
+            opacity: 1;
+            transition: ease-in;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            align-items: center;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: medium;
+        }
+
+        .bottom-left {
+            position: absolute;
+            bottom: 0.1%;
+            left: 1%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: xx-large;
+            color: whitesmoke;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <table>
+            <td>
+                <img src="8359630_bg.png" class="logo">
+            </td>
+            <td>
+                <h2 style="color: rgb(77, 49, 30); float: right; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                    BY2COFFEE</h2>
+            </td>
+            <td><a href="contact.html" style="text-align: right;"> Contact us</td>
+        </table>
+    </div>
+    <div>
+        <img src="coffeebg.jpg" class="bg">
+        <div class="bottom-left"><b> Take a Coffee Break</b> </div>
+
+    </div>
+    <div style=" background-color: rgb(226, 217, 205);">
+        <div class="row">
+            <div class="column_left">
+                <a href="beverage.html"><img src="beverage.jpg" alt="beverage"></a>
+                <div class="desc">Beverages</div>
+            </div>
+        </div>
+        <div class="row" style="background-color: rgb(171, 156, 138);">
+            <div class="column_right">
+                <a href="breakfast.html"><img src="breakfast.jpg" alt="breakfast"></a>
+                <div class="desc">Breakfast</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column_left">
+                <img src="lunch.jpg" alt="lunch">
+                <div class="desc">Lunch</div>
+            </div>
+        </div>
+        <div class="row" style="background-color: rgb(171, 156, 138)">
+            <div class="column_right">
+                <img src="Dinner.jpg" alt="Dinner">
+                <div class="desc">Dinner</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>To Do List</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('cactus.jpg');
+            background-size: cover;
+            filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#fbd07c", endColorstr="#F779C9", GradientType=1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        input {
+            padding: 5px;
+            margin-right: 10px;
+            height: 0.5cm;
+            width: 6cm;
+        }
+
+        button {
+            padding: 6px 10px;
+            background-color: #4e8250;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 8px;
+            margin: 5px 0;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        li:hover {
+            background-color: #f2f2f2;
+        }
+
+        div {
+            width: 40%;
+            text-align: center;
+
+        }
+    </style>
+    <script src="event.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1>To Do List</h1>
+
+
+        <input type="text" id="listItem" placeholder="Enter a new task">
+        <button id="addItemBtn"><span style="font-size: medium;">+</span></button>
+
+        <ul id="dynamicList">
+
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="javas.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <table>
+                <tr>
+                    <td class="tableCard">
+                        Runs<br><br>
+                        <h1 id="runs"></h1>
+                    </td>
+                    <td class="tableCard">
+                        Balls<br><br>
+                        <h1 id="balls"></h1>
+                    </td>
+                    <td class="tableCard">
+                        Wickets<br><br>
+                        <h1 id="wickets"></h1>
+                    </td>
+                </tr>
+
+            </table>
+            <div style="margin-bottom: 1cm;">
+                <select name="NoBall" id="SelectNoBall" class="btn fill" onchange="NoBall()">
+                    <option selected>No Ball</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+                <button class="btn fill" onclick="wide()">Wide</button>
+                <button class="btn fill" onclick="wicket()">Wicket</button>
+            </div>
+            <div>
+                <button class="btn outline" onclick="run_1()">0</button>
+                <button class="btn outline" onclick="run_1()">1</button>
+                <button class="btn outline" onclick="run_2()">2</button>
+                <button class="btn outline" onclick="run_3()">3</button>
+                <button class="btn outline" onclick="run_4()">4</button>
+                <button class="btn outline" onclick="run_5()">5</button>
+                <button class="btn outline" onclick="run_6()">6</button>
+            </div>
+            <table>
+                <tr>
+                    <td class="tableCard">
+                        <table>
+                            <tr>
+                                <th>6s</th>
+                                <th>4s</th>
+                            </tr>
+                            <tr>
+                                <td id="count6"></td>
+                                <td id="count4"></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="tableCard">
+                        <table>
+                            <tr>
+                                <th>No Balls</th>
+                                <th>Wide Balls</th>
+                            </tr>
+                            <tr>
+                                <td id="NoBalls">0</td>
+                                <td id="Wide">0</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <div style="padding: 1cm;">
+                <div style="margin: 0cm; float: left;">
+                    <table style=" width: 1%; border-collapse: collapse;" class="flagTable">
+                        <td style="padding-bottom: 2px;"><img width="32" height="32" src="indiaFlag.webp" class="image">
+                        </td>
+                        <td style="padding-bottom: 2px;"><span class="text">India</span> </td>
+                    </table>
+                </div>
+                <div style="float: right; margin: 0cm">
+                    <table style=" width: 1%; border-collapse: collapse;" class="flagTable">
+                        <td style="padding-bottom:2px;"><img width="32" height="32" src="AustraliaFlag.webp"
+                                class="image">
+                        </td>
+                        <td style="padding-bottom:2px;" width="50%"><span class="text">Australia</span></td>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
